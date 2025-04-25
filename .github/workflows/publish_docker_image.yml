@@ -1,5 +1,6 @@
 name: Publish Docker image
 
+# Workflow to build and push Docker images to GitHub Container Registry
 on:
     release:
         types: [published]
