@@ -1,9 +1,9 @@
 # Healthchecks JRE Fork
 
-
-
-
 ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/jr551/healthchecks-jre?utm_source=oss&utm_medium=github&utm_campaign=jr551%2Fhealthchecks-jre&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+[![Docker Pulls](https://img.shields.io/github/v/release/jr551/healthchecks-jre?label=Latest%20Release&logo=docker)](https://github.com/jr551/healthchecks-jre/pkgs/container/healthchecks-jre)
+[![Docker Image Size](https://img.shields.io/docker/image-size/jr551/healthchecks-jre/latest?logo=docker)](https://github.com/jr551/healthchecks-jre/pkgs/container/healthchecks-jre)
+
 This is a JRE-optimized fork of the [Healthchecks](https://github.com/healthchecks/healthchecks) project.
 
 [![Tests](https://github.com/jr551/healthchecks-jre/actions/workflows/tests.yml/badge.svg)](https://github.com/jr551/healthchecks-jre/actions/workflows/tests.yml)
@@ -599,3 +599,28 @@ The Docker images:
 * Do *not* handle TLS termination. In a production setup, you will want to put
   the Healthchecks container behind a reverse proxy or load balancer that handles TLS
   termination.
+
+## Docker Images
+
+Docker images are automatically built and published to GitHub Container Registry for each release. Images are available for multiple architectures (amd64, arm/v7, arm64).
+
+### Pull the Image
+
+```bash
+docker pull ghcr.io/jr551/healthchecks-jre:latest
+```
+
+Or for a specific version:
+
+```bash
+docker pull ghcr.io/jr551/healthchecks-jre:v1.0.0
+```
+
+### Available Tags
+
+- `latest`: Latest stable release
+- `vX.Y.Z`: Specific version (e.g., v1.0.0)
+- `vX.Y`: Latest patch for a minor version
+- `vX`: Latest minor for a major version
+
+Browse all available tags at [GitHub Packages](https://github.com/jr551/healthchecks-jre/pkgs/container/healthchecks-jre).
